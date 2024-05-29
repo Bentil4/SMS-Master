@@ -221,8 +221,8 @@ const AddPlayerForm = () => {
                   setFormData({ ...formData, role: e.target.value })
                 }
               >
-                <option>Admin</option>
-                <option>Teacher</option>
+                <option>admin</option>
+                <option>teacher</option>
               </select>
             </label>
           </div>

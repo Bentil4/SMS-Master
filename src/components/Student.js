@@ -12,16 +12,17 @@ function Student() {
   const [studentData, setStudentData] = useState([]);
   const { user } = useContext(UserContext);
 
-  const fetchdata = async () => {
-    const res = await fetch('http://localhost:8080/api/v1/student/allStudent');
+  const fetchdata = async (className) => {
+    const res = await fetch(
+      `http://localhost:8080/api/v1/student/class?studentClass=${className}`
+    );
+
     const data = await res.json();
     setStudentData(data);
     setFilteredStudentData(data);
   };
 
-  useEffect(() => {
-    fetchdata();
-  }, []);
+  useEffect(() => {}, []);
 
   useEffect(() => {
     const filteredData = studentData.filter((student) => {
@@ -39,6 +40,30 @@ function Student() {
     <div className="student">
       <Sidebar />
       <div className="student12">
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <button
+            onClick={() => {
+              fetchdata(1);
+            }}
+          >
+            Form 1
+          </button>
+          <button
+            onClick={() => {
+              fetchdata(2);
+            }}
+          >
+            Form 2
+          </button>
+          <button
+            onClick={() => {
+              fetchdata(3);
+            }}
+          >
+            Form 3
+          </button>
+        </div>
+
         <div className="student-first" ref={targetref}>
           <div className="student-header">
             <div className="student-search">

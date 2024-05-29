@@ -164,6 +164,9 @@ form {
 .dash {
   width: 80%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
 }
 
 .dash-header {
@@ -184,6 +187,10 @@ form {
   margin-top: 70px;
   display: flex;
   padding: 2% 0px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .dash-left {
@@ -216,6 +223,17 @@ form {
 .student12 {
   padding: 20px;
   width: 80%;
+}
+
+.student12 button {
+  margin: 2em 2em 0 2em;
+  padding: 1em 2.5em;
+  background: #013449;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 
 .student-header {
@@ -290,6 +308,31 @@ form {
   width: 100%;
   height: 100%;
   padding-right: 50px;
+}
+
+.add-student select {
+  margin-left: 3%;
+  width: 93%;
+  padding: 1em;
+  background-color: #c5c6c7;
+  outline: none;
+  border: none;
+}
+
+.add-student select option {
+  padding: 500px;
+  height: 100%;
+  margin-bottom: 3em;
+  font-size: 15px;
+  /* background: red; */
+}
+
+.add-student select option:hover {
+  background-color: #f1f1f1;
+}
+
+.add-student select option:checked {
+  background-color: #e6e6e6;
 }
 
 .adding-student {

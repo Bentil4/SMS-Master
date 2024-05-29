@@ -103,7 +103,7 @@ function UpdateStudent() {
         <h1>Update Students</h1>
         {students.map((student) => (
           <div key={student.studentId}>
-            <p>{`${student.firstName} ${student.lastName}`}</p>
+            <p>{`${student.firstName} ${student.middleName} ${student.lastName}`}</p>
             <button onClick={() => handleUpdateClick(student)}>
               Update/Edit
             </button>

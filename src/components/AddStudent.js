@@ -9,9 +9,17 @@ function AddStudent() {
     dob: '',
     email: '',
     phone: '',
+    studentClass: '',
+    class: '',
     addresses: [{ residence: '', location: '' }],
     guardian: [{ name: '', relationship: '', contact: '' }],
   });
+
+  // const classList = [
+  //   { name: 'form 1', code: 'Form 1' },
+  //   { name: 'form 2', code: 'Form 2' },
+  //   { name: 'form 3', code: 'Form 3' },
+  // ];
 
   const handleInput = (e) => {
     setformData({ ...formData, [e.target.name]: e.target.value });
@@ -89,6 +97,31 @@ function AddStudent() {
           </div>
           {/* <div className="student-column"></div> */}
           <div className="student-column">
+            {/* <input
+              type="text"
+              name="class"
+              value={formData.studentClass}
+              onChange={handleInput}
+              placeholder="Class"
+              required
+            /> */}
+
+            <label>
+              <select
+                className="student-class"
+                name="studentClass"
+                value={formData.studentClass.role}
+                onChange={(e) =>
+                  setformData({ ...formData, studentClass: e.target.value })
+                }
+              >
+                <option>Select Class</option>
+                <option>Form 1</option>
+                <option>Form 2</option>
+                <option>Form 3</option>
+              </select>
+            </label>
+
             <input
               type="text"
               name="residence"

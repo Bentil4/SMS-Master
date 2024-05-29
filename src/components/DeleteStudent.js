@@ -55,7 +55,7 @@ function DeleteStudent() {
         <h1>Delete Students</h1>
         {students.map((student) => (
           <div key={student.studentId}>
-            <p>{`${student.firstName} ${student.lastName}`}</p>
+            <p>{`${student.firstName} ${student.middleName} ${student.lastName}`}</p>
             <button onClick={() => handleDelete(student.studentId)}>
               Delete
             </button>
