@@ -16,6 +16,7 @@ import AddPlayerForm from './components/RegisterPage';
 import AddTeacher from './components/AddTeacher';
 import AddStudent from './components/AddStudent';
 import Teacher from './components/Teacher';
+import AddResults from './components/AddResults';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/AddTecher" element={<AddTeacher />} />
         <Route path="/Teacher" element={<Teacher />} />
         <Route path="/AddStudent" element={<AddStudent />} />
+        <Route path="/AddResults" element={<AddResults />} />
         {/* <Route path="/LoginPage" element={<LoginPage />} /> */}
         <Route path="/Results" element={<Results />} />
         {/* <Route path="/RegisterPage" element={<RegisterPage />} /> */}

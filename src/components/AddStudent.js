@@ -115,10 +115,10 @@ function AddStudent() {
                   setformData({ ...formData, studentClass: e.target.value })
                 }
               >
-                <option>Select Class</option>
-                <option>Form 1</option>
-                <option>Form 2</option>
-                <option>Form 3</option>
+                <option>Select Form</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
               </select>
             </label>
 

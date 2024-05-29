@@ -486,7 +486,17 @@ tbody {
   display: flex;
   overflow: auto;
   width: 100%;
-  /* margin-top: 5em; */
+}
+
+.my-table button {
+  margin: 2em 2em 0 2em;
+  padding: 1em 2.5em;
+  background: #013449;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 
 table {
